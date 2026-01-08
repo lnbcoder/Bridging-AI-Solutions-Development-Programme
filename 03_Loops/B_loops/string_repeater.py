@@ -7,7 +7,10 @@
 # string_repeater("tac", 3) #-> 'tactactac'
 
 def string_repeater(text, n):
-    return text * n
+    str = ""
+    for i in range(n):
+        str += text
+    return str
 
 print(string_repeater("q", 4))
 print(string_repeater("go", 2))

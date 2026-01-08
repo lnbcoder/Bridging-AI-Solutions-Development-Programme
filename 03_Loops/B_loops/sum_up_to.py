@@ -9,8 +9,10 @@ def sum_up_to(max_num):
     sum = 0
     for i in range(1, max_num + 1):
         sum += i
-
+        
     return sum
 
-num = int(input("Enter number: "))
-print(sum_up_to(num))
+print(sum_up_to(4))
+print(sum_up_to(5))
+print(sum_up_to(2))
+
