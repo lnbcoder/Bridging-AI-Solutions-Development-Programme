@@ -5,11 +5,11 @@ def make_matrix(m, n, value):
     twoD_list = []
 
     for i in range(m):
-        list = []
+        column = []
         for j in range(n):
-          list.append(value)  # adds value in column
-        twoD_list.append(list) # adds the list (column) to row
-        
+          column.append(value)  # adds value in column
+        twoD_list.append(column) # adds the list (column) to row
+
     return twoD_list
 
 print(make_matrix(3, 5, None))
