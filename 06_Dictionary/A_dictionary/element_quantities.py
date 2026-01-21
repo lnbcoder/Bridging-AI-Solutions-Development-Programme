@@ -5,9 +5,9 @@
 
 def element_quantities(quantities):
     quantity_list = []
-    #for i in range(len(quantities)):
-        #product = quantities[]
-    return quantities.get(3)
+    for element, quantity in quantities.items():
+        quantity_list.extend([element] * quantity)
+    return quantity_list
 
 quantities1 = {"cat":3,"bird":1,"dog":2 }
 print(element_quantities(quantities1))
