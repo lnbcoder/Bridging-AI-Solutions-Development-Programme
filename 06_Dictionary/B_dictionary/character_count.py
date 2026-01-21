@@ -2,16 +2,15 @@
 # The function should return a **dictionary** containing the count of each character in the string.
 
 def character_count(str):
-    str_list = len(str)
-    count = 0
-    
-    for i in range(str_list):
-        print(str[i])
+    dict = {}
+    for i in str:
+        if i not in dict:
+            dict[i] = 1
+        else:
+            dict[i] += 1
+    return dict
 
-    #return str_list
-
-character_count("evening")
-# print(character_count("evening"))
+print(character_count("evening"))
 # { 'e': 2, 'v': 1, 'n': 2, 'i': 1, 'g': 1 }
 
 print(character_count("mississippi"))
