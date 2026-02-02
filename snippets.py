@@ -1,23 +1,10 @@
-dog = {
-"name":"Manny",
-"age":5,
-"breed":"pug",
-"color":"fawn",
-"favoriteFoods": ["bacon"],
-}
+age = [23,25]
 
-print(dog["age"])
-print(dog["breed"])
-print(dog["favoriteFoods"])
+def age_2026_2027():
+    age[0] = 24
+    age[1] = 24 + 2
+    print(age)
 
-dog["age"] +=1
-dog["breed"] = dog["breed"].upper()
-dog["favoriteFoods"].append("sausage")
-
-print(dog["age"])
-print(dog["breed"])
-print(dog["favoriteFoods"])
-
-for key in dog:
-    print(key,"is", dog[key])
-
+print(age)
+age_2026_2027()
+print(age)
