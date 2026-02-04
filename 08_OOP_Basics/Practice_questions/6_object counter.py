@@ -7,16 +7,12 @@
 class Car:
     total_cars = 0
 
-    def increment(self):
+    def __init__(self, brand):
+        self.brand = brand
         Car.total_cars += 1
 
-car1 = Car()
-car1.increment()
-
-car2 = Car()
-car2.increment()
-
-car3 = Car()
-car3.increment()
+car1 = Car("Mercedes Benz")
+car2 = Car("BMW")
+car3 = Car("Suzuki Fronx")
 
 print(f"Total number of cars: {Car.total_cars}")
