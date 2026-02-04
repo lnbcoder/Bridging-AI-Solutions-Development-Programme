@@ -2,10 +2,10 @@
 # The function should return a new string where **every vowel** in the original string is repeated **twice consecutively**.
 # Vowels are: `a, e, i, o, u`
 
-def double_vowel(str):
+def double_vowel(word):
     vowels = list('aeiou')
     new_str = ""
-    for i in str:
+    for i in word:
         if i in vowels:
             new_str += i * 2
         else:
