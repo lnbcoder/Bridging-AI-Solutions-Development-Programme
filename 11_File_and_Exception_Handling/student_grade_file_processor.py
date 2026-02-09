@@ -10,7 +10,7 @@
 #
 # Exercise
 # Task
-# 1.Use try with with open("grades.txt", "r") as file:
+# 1.Use try with 'with open("grades.txt", "r") as file':
 # 2.Read all lines from the file.
 # 3.Convert each line into an integer.
 # 4.Calculate and print the average grade.
@@ -21,7 +21,7 @@
 
 try:
     with open("grades.txt", "r") as file:
-        sum = 0
+        marks_sum = 0
         content = file.readlines()
         count_marks = 0
 
@@ -29,7 +29,7 @@ try:
             sum += int(mark.strip())
             count_marks += 1
 
-        average = sum / count_marks
+        average = marks_sum / count_marks
         print("Students average:", average)
 
 except FileNotFoundError:
