@@ -6,9 +6,9 @@
 
 sentence = input("Enter sentence: ")
 
-with open("Text_Files/notes.txt","a") as append_file:
+with open("Text_Files/notes.txt", "a") as append_file:
     append_file.write(sentence + "\n")
 
-with open("Text_Files/notes.txt","r") as file:
+with open("Text_Files/notes.txt", "r") as file:
     read_file = file.read()
     print(read_file)

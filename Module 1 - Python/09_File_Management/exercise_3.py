@@ -8,7 +8,7 @@
 # Question to think about
 # - What is the data type returned by readlines()?
 
-file = open("Text_Files/notes.txt","r")
+file = open("Text_Files/notes.txt", "r")
 read_file = file.readlines()
 for line in read_file:
     print(line.strip())

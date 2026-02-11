@@ -8,7 +8,7 @@
 # 🧠 Question:
 # - Why doesn’t read() print the full file?
 
-with open("Text_Files/notes_2.txt","r") as file:
+with open("Text_Files/notes_2.txt", "r") as file:
     readline_file = file.readline()
     print(readline_file)
     print(readline_file)

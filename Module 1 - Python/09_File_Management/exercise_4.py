@@ -6,12 +6,12 @@
 # 5.Print the updated file using read()
 # ⚠️ Make sure your appended text starts on a new line.
 
-file = open("Text_Files/notes.txt","a")
+file = open("Text_Files/notes.txt", "a")
 file.write("So far I have covered alot of topics.\n")
 file.write("I'm really enjoy learning python.\n")
 file.close()
 
-file_r = open("Text_Files/notes.txt","r")
+file_r = open("Text_Files/notes.txt", "r")
 read_file = file_r.read()
 print(read_file)
 

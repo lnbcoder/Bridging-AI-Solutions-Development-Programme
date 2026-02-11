@@ -8,7 +8,7 @@
 # Think
 # - Why don’t we need close() here?
 
-with open("Text_Files/notes_2.txt","w") as file:
+with open("Text_Files/notes_2.txt", "w") as file:
     file.write("line 1\n")
     file.write("line 2\n")
     file.write("line 3\n")

@@ -5,7 +5,7 @@
 # 4.Print each line
 # 💡 This mimics how files are read internally.
 
-file = open("Text_Files/notes.txt","r")
+file = open("Text_Files/notes.txt", "r")
 
 while True:
     read_line = file.readline()
