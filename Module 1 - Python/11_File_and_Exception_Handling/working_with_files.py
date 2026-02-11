@@ -17,7 +17,7 @@
 file = None
 
 try:
-    file = open("config.txt","r")
+    file = open("config.txt", "r")
     content = file.read()
     number = int(content)
     print(f"{number} multiplied by 2 is {number * 2}")
