@@ -10,13 +10,13 @@
 # - Do NOT use with
 # - You must call close()
 
-file = open("Text_Files/notes.txt","w")
+file = open("Text_Files/notes.txt", "w")
 file.write("Hello There!\n")
 file.write("My name is Loveness.\n")
 file.write("I am learning Python Programming.\n")
 file.close()
 
-file = open("Text_Files/notes.txt","r")
+file = open("Text_Files/notes.txt", "r")
 read_file = file.read()
 print(read_file)
 file.close()
