@@ -25,7 +25,7 @@ response = client.chat.completions.create(
         {"role":"system","content":"act like a strict math teacher"},
         {"role":"user","content":"Explain what 12 * 8 equals."}
     ],
-    max_completion_tokens = 200
+    max_completion_tokens = 100
 )
 
 print(response.choices[0].message.content)
