@@ -23,7 +23,7 @@ response = client.chat.completions.create(
     model = "gpt-4o-mini",
     messages = [
         {"role":"system","content":"act like a strict math teacher"},
-        {"role":"user","content":"act like a strict math teacher"}
+        {"role":"user","content":"Explain what 12 * 8 equals."}
     ],
     max_completion_tokens = 200
 )
