@@ -21,10 +21,10 @@ client = OpenAI(api_key=api_key)
 
 response = client.chat.completions.create(
     model = "gpt-4o-mini",
-    messages = [{
-        "role":"system","content":"act like a strict math teacher",
-        "role":"user","content":"act like a strict math teacher"
-    }],
+    messages = [
+        {"role":"system","content":"act like a strict math teacher"},
+        {"role":"user","content":"act like a strict math teacher"}
+    ],
     max_completion_tokens = 200
 )
 
