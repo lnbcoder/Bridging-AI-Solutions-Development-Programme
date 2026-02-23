@@ -21,12 +21,14 @@ if not api_key:
 
 client = OpenAI(api_key = api_key)
 
+
 response = client.chat.completions.create(
     model = "gpt-4o-mini",
-    messages = [{
-        "role":"system","content":"You must respond only in valid JSON with keys: title and summary.",
-        "role":"user","content":"Explain what a Python dictionary is."
-    }]
+    messages = [
+        {"role":"system","content":"You must respond only in valid JSON with keys: title and summary."},
+        {"role":"user","content":"Explain what a Python dictionary is."}
+    ]
 )
 
 print(response.choices[0].message.content)
+
