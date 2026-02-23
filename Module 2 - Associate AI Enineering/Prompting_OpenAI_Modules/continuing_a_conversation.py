@@ -30,7 +30,7 @@ response = client.chat.completions.create(
         {"role": "assistant", "content": "A variable stores data."},
         {"role": "user", "content": "Can you give me an example?"}
     ],
-    max_completion_tokens = 150
+    max_completion_tokens = 100
 
 )
 
