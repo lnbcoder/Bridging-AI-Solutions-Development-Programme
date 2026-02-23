@@ -20,11 +20,11 @@ client = OpenAI(api_key=api_key)
 
 response = client.chat.completions.create(
     model = "gpt-4o-mini",
-    messages = [{
-        "role":"user", "content":"Is 5 a prime number?",
-        "role":"assistant", "content":"No, it is not.",
-        "role":"user", "content":"Are you sure? Please think again carefully."
-    }]
+    messages = [
+        {"role":"user", "content":"Is 5 a prime number?"},
+        {"role":"assistant", "content":"No, it is not."},
+        {"role":"user", "content":"Are you sure? Please think again carefully."}
+    ]
 )
 
 print(response.choices[0].message.content)
