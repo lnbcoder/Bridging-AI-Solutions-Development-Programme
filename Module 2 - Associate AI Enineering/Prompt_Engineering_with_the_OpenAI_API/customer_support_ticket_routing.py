@@ -19,7 +19,7 @@ def get_response(prompt):
         ],
         max_completion_tokens=250
     )
-
+    return response.choice[0].message.content
 ticket = """Hello Support Team,
 
 I was charged twice for my subscription this month, but I can only see one active plan in my account dashboard. 
