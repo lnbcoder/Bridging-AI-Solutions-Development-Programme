@@ -18,5 +18,3 @@ for result in results:
     print(f"Result {count}: {result['generated_text']}")
     count += 1
 
-
-
