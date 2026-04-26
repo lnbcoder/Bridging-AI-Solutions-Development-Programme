@@ -1,7 +1,6 @@
 from dotenv import load_dotenv
 import os
 from openai import OpenAI
-import gradio as gr
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
