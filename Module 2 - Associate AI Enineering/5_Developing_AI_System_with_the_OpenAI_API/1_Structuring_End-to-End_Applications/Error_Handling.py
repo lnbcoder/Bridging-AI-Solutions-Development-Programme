@@ -16,9 +16,9 @@ try:
       ]
   )
 
-print(response.choices[0].message.content)
-
-exceptExceptionase:
+  print(response.choices[0].message.content)
+  
+except Exception as e:
   print("Something went wrong. Please try again later.")
 
 
