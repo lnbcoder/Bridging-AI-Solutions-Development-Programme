@@ -19,3 +19,5 @@ gr.Interface(fn=divisible_by_num, inputs="textbox", outputs="textbox", flagging_
 #launch(inbrowser=True) -> used to launch the interface in the default web browser.
 #launch(share=True) -> used to share the interface with others by generating a public URL.
 #launch(auth=("Loveness", "love123")) -> used to authenticate users before they can accessing interface.
+
+7_UI/Gradio/Gradio_Practice/
