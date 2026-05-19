@@ -2,11 +2,12 @@
 from dotenv import load_dotenv
 import os
 from openai import OpenAI
+import openai
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key="<OPENAI_API_TOKEN>")
 
 try:
     response=client.chat.completions.create(
@@ -21,5 +22,7 @@ except openai.AuthenticationError as e:
 
 # except openai.RateLimitError as e:
 #         print(f"Too many requests. Please wait.{e}")
-except Exception as e:
-    print(f"Unexpected error occurred.{e}")
+#except Exception as e:
+    #print(f"Unexpected error occurred.{e}")
+
+
